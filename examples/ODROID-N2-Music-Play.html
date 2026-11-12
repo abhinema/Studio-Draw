@@ -1,0 +1,174 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ODROID-N2 Music Play · conditional source path</title><style>:root { color-scheme: dark; --page: #101419; --ink: #dce5e1; --muted: #9daab0; --accent: #b9e9c4; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 28px; background: var(--page); color: var(--ink); font: 15px system-ui, sans-serif; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.brand { color: var(--accent); font-weight: 650; }
+h1 { margin: 8px 0; font-size: 24px; }
+p { color: var(--muted); line-height: 1.5; }
+button { background: var(--accent); color: #15261c; border: 0; border-radius: 8px; padding: 10px 16px; font: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+#trace-status { min-height: 1.5em; }
+main { max-width: 100%; overflow: auto; border: 1px solid #2b353d; border-radius: 12px; }
+svg { display: block; max-width: none; }
+[data-sd-id] { cursor: pointer; }
+.sd-hit { stroke: transparent; stroke-width: 14; fill: none; pointer-events: stroke; }
+svg[data-tracing] [data-sd-id].sd-dim { opacity: .18; }
+[data-sd-id].sd-related > :is(rect, ellipse, polygon, polyline):not(.sd-hit) { stroke-width: 3; }
+[data-sd-id].sd-primary { filter: drop-shadow(0 0 5px #b9e9c4); }
+[data-sd-id].sd-primary > :is(rect, ellipse, polygon, polyline):not(.sd-hit) { stroke-width: 4; }
+[data-sd-id]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media print {
+    body { padding: 0; }
+    header, #trace-status, noscript { display: none; }
+    main { overflow: visible; border: 0; }
+    svg { max-width: 100%; height: auto; }
+    svg [data-sd-id] { opacity: 1 !important; filter: none !important; outline: none !important; }
+    svg [data-sd-id] > :is(rect, ellipse, polygon):not(.sd-hit) { stroke-width: 1 !important; }
+    svg [data-sd-id] > polyline:not(.sd-hit) { stroke-width: 2 !important; }
+}
+</style></head><body>
+<header><div><span class="brand">Studio Draw</span><h1>ODROID-N2 Music Play · conditional source path</h1>
+<p>Hover or Tab to explore. Click or Enter to pin. Escape to clear.</p></div>
+<button id="clear-focus" type="button" hidden>Clear highlight</button></header>
+<p id="trace-status" role="status" aria-live="polite">Full diagram · connections follow saved attachments.</p>
+<main aria-label="Interactive diagram"><svg xmlns="http://www.w3.org/2000/svg" width="630.0" height="378.0" viewBox="0 0 630.0 378.0" role="group" aria-label="ODROID-N2 Music Play · conditional source path" data-sd-focus-policy="relations"><title>ODROID-N2 Music Play · conditional source path</title>
+<rect width="100%" height="100%" fill="#111827"/>
+<g data-sd-id="6596EA0A-3286-451A-B8EE-28305A8EC0A7" data-sd-kind="rectangle" data-sd-label="onPlay" tabindex="0" role="button" aria-label="Highlight onPlay" aria-pressed="false"><title>onPlay</title>
+<rect x="0.0" y="0.0" width="120.0" height="72.0" rx="8" fill="#111827" stroke="#CBD5E1"/>
+<text x="60.0" y="36.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="14.0" fill="#CBD5E1">onPlay</text>
+</g>
+<g data-sd-id="8E9DD46A-DBA8-4BF1-9A8B-4B9E1F0CF2F1" data-sd-kind="rectangle" data-sd-label="handlePlayRequest" tabindex="0" role="button" aria-label="Highlight handlePlayRequest" aria-pressed="false"><title>handlePlayRequest</title>
+<rect x="210.0" y="0.0" width="210.0" height="72.0" rx="8" fill="#111827" stroke="#CBD5E1"/>
+<text x="315.0" y="36.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="14.0" fill="#CBD5E1">handlePlayRequest</text>
+</g>
+<g data-sd-id="454C0971-B6BB-4004-95BF-F1BDCC5306AB" data-sd-kind="rectangle" data-sd-label="play" tabindex="0" role="button" aria-label="Highlight play" aria-pressed="false"><title>play</title>
+<rect x="510.0" y="0.0" width="120.0" height="72.0" rx="8" fill="#111827" stroke="#CBD5E1"/>
+<text x="570.0" y="36.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="14.0" fill="#CBD5E1">play</text>
+</g>
+<g data-sd-id="DDA7AA8C-ED85-4AD8-9C38-D6BC9C7DBAF5" data-sd-kind="connector" data-sd-label="onPlay lifeline" tabindex="0" role="button" aria-label="Highlight onPlay lifeline" aria-pressed="false"><title>onPlay lifeline</title>
+<defs></defs>
+<polyline points="60.0,72.0 60.0,369.0 65.0,369.0" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+<polyline class="sd-hit" points="60.0,72.0 60.0,369.0 65.0,369.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="8B492B02-7B36-41CC-A367-7E7D215F006B" data-sd-kind="connector" data-sd-label="handlePlayRequest lifeline" tabindex="0" role="button" aria-label="Highlight handlePlayRequest lifeline" aria-pressed="false"><title>handlePlayRequest lifeline</title>
+<defs></defs>
+<polyline points="315.0,72.0 315.0,369.0 320.0,369.0" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+<polyline class="sd-hit" points="315.0,72.0 315.0,369.0 320.0,369.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="9F9C5E67-86D2-4CC8-8CCA-2CC158553F73" data-sd-kind="connector" data-sd-label="play lifeline" tabindex="0" role="button" aria-label="Highlight play lifeline" aria-pressed="false"><title>play lifeline</title>
+<defs></defs>
+<polyline points="570.0,72.0 570.0,369.0 575.0,369.0" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+<polyline class="sd-hit" points="570.0,72.0 570.0,369.0 575.0,369.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="CA6D8249-5948-45FF-8189-0C366D58F6B8" data-sd-kind="connector" data-sd-label="1 · source call" tabindex="0" role="button" aria-label="Highlight 1 · source call" aria-pressed="false"><title>1 · source call</title>
+<defs><marker id="head-CA6D8249-5948-45FF-8189-0C366D58F6B8-end" viewBox="0 0 11 10" refX="10" refY="5" markerWidth="11" markerHeight="10" orient="auto-start-reverse"><g fill="none" stroke="#CBD5E1" stroke-width="1"><path d="M1 1 L10 5 L1 9 Z" fill="#CBD5E1"/></g></marker></defs>
+<polyline points="60.0,161.4375 315.0,161.4375" fill="none" stroke="#CBD5E1" stroke-width="2" marker-end="url(#head-CA6D8249-5948-45FF-8189-0C366D58F6B8-end)"/>
+<polyline class="sd-hit" points="60.0,161.4375 315.0,161.4375" aria-hidden="true"/>
+</g>
+<g data-sd-id="EB51B6E4-8B09-4E8B-AEE2-089B9547D2B9" data-sd-kind="text" data-sd-label="1 · source call" tabindex="0" role="button" aria-label="Highlight 1 · source call" aria-pressed="false"><title>1 · source call</title>
+<text x="182.5" y="134.4375" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="14.0" fill="#CBD5E1">1 · source call</text>
+</g>
+<g data-sd-id="299F7B5D-9DEC-4D47-B1F1-0BED8AD1F54A" data-sd-kind="connector" data-sd-label="2 · source call" tabindex="0" role="button" aria-label="Highlight 2 · source call" aria-pressed="false"><title>2 · source call</title>
+<defs><marker id="head-299F7B5D-9DEC-4D47-B1F1-0BED8AD1F54A-end" viewBox="0 0 11 10" refX="10" refY="5" markerWidth="11" markerHeight="10" orient="auto-start-reverse"><g fill="none" stroke="#CBD5E1" stroke-width="1"><path d="M1 1 L10 5 L1 9 Z" fill="#CBD5E1"/></g></marker></defs>
+<polyline points="315.0,259.875 570.0,259.875" fill="none" stroke="#CBD5E1" stroke-width="2" marker-end="url(#head-299F7B5D-9DEC-4D47-B1F1-0BED8AD1F54A-end)"/>
+<polyline class="sd-hit" points="315.0,259.875 570.0,259.875" aria-hidden="true"/>
+</g>
+<g data-sd-id="E9C1E2E4-32B4-430C-B8DD-3555777ABFF4" data-sd-kind="text" data-sd-label="2 · source call" tabindex="0" role="button" aria-label="Highlight 2 · source call" aria-pressed="false"><title>2 · source call</title>
+<text x="437.5" y="232.875" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="14.0" fill="#CBD5E1">2 · source call</text>
+</g>
+</svg></main>
+<noscript><p>Interactive highlighting requires JavaScript. The complete diagram is shown above.</p></noscript>
+<script type="text/javascript">/* Studio Draw: independent relationship highlighting over the exported document. */
+(() => {
+    'use strict';
+    const svg = document.querySelector('main svg');
+    if (!svg) return;
+    const focusPolicy = svg.dataset.sdFocusPolicy || 'relations';
+    const items = [...svg.querySelectorAll('[data-sd-id]')];
+    const byID = new Map(items.map(item => [item.dataset.sdId, item]));
+    const edges = items.filter(item => item.dataset.sdKind === 'connector');
+    const children = new Map();
+    for (const item of items) {
+        const parent = item.dataset.sdParent;
+        if (byID.has(parent)) {
+            if (!children.has(parent)) children.set(parent, []);
+            children.get(parent).push(item.dataset.sdId);
+        }
+    }
+    const status = document.getElementById('trace-status');
+    const clear = document.getElementById('clear-focus');
+    let pinned = null;
+    let hovered = null;
+    let focused = null;
+
+    function relationships(id) {
+        const active = new Set([id]);
+        if (focusPolicy === 'self') return active;
+        // Container exploration reveals descendants but does not highlight their connections.
+        const queue = [id];
+        for (let i = 0; i < queue.length; i++) {
+            for (const child of children.get(queue[i]) || []) {
+                if (!active.has(child)) { active.add(child); queue.push(child); }
+            }
+        }
+        for (const edge of edges) {
+            const from = edge.dataset.sdFrom, to = edge.dataset.sdTo;
+            if (!byID.has(from) || !byID.has(to)) continue;
+            if (edge.dataset.sdId === id || from === id || to === id) {
+                active.add(edge.dataset.sdId); active.add(from); active.add(to);
+            }
+        }
+        // Flat SVG groups keep a dim container from reducing an active child's opacity.
+        for (const member of [...active]) {
+            let parent = byID.get(member)?.dataset.sdParent;
+            const seen = new Set();
+            while (byID.has(parent) && !seen.has(parent)) {
+                seen.add(parent); active.add(parent); parent = byID.get(parent).dataset.sdParent;
+            }
+        }
+        return active;
+    }
+
+    function render() {
+        const id = pinned || hovered || focused;
+        const active = id ? relationships(id) : new Set();
+        svg.toggleAttribute('data-tracing', Boolean(id));
+        for (const item of items) {
+            const key = item.dataset.sdId;
+            item.classList.toggle('sd-dim', Boolean(id) && !active.has(key));
+            item.classList.toggle('sd-related', Boolean(id) && active.has(key));
+            item.classList.toggle('sd-primary', key === id);
+            item.setAttribute('aria-pressed', String(key === pinned));
+        }
+        status.textContent = id
+            ? `${pinned ? 'Pinned' : 'Preview'}: ${byID.get(id).dataset.sdLabel} · ${focusPolicy === 'self' ? 'current component' : 'saved connections and hierarchy'}`
+            : focusPolicy === 'self' ? 'Full diagram · hover to focus one component.' : 'Full diagram · connections follow saved attachments.';
+        clear.hidden = !id;
+    }
+
+    function reset() { pinned = hovered = focused = null; render(); }
+    function pin(id) { pinned = pinned === id ? null : id; hovered = focused = null; render(); }
+    for (const item of items) {
+        const id = item.dataset.sdId;
+        item.addEventListener('pointerenter', () => { hovered = id; render(); });
+        item.addEventListener('pointerleave', () => { if (hovered === id) hovered = null; render(); });
+        item.addEventListener('focus', () => { focused = id; render(); });
+        item.addEventListener('blur', () => { if (focused === id) focused = null; render(); });
+        item.addEventListener('click', () => pin(id));
+        item.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); pin(id); }
+        });
+    }
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') reset(); });
+    svg.addEventListener('click', event => { if (!event.target.closest('[data-sd-id]')) reset(); });
+    clear.addEventListener('click', () => {
+        // Move focus off a control that is about to be hidden.
+        const previous = byID.get(pinned || hovered || focused);
+        previous?.focus();
+        reset();
+    });
+    render();
+})();
+</script></body></html>

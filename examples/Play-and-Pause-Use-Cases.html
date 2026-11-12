@@ -1,0 +1,180 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ODROID-N2 · Use cases · control a local track</title><style>:root { color-scheme: dark; --page: #101419; --ink: #dce5e1; --muted: #9daab0; --accent: #b9e9c4; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 28px; background: var(--page); color: var(--ink); font: 15px system-ui, sans-serif; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.brand { color: var(--accent); font-weight: 650; }
+h1 { margin: 8px 0; font-size: 24px; }
+p { color: var(--muted); line-height: 1.5; }
+button { background: var(--accent); color: #15261c; border: 0; border-radius: 8px; padding: 10px 16px; font: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+#trace-status { min-height: 1.5em; }
+main { max-width: 100%; overflow: auto; border: 1px solid #2b353d; border-radius: 12px; }
+svg { display: block; max-width: none; }
+[data-sd-id] { cursor: pointer; }
+.sd-hit { stroke: transparent; stroke-width: 14; fill: none; pointer-events: stroke; }
+svg[data-tracing] [data-sd-id].sd-dim { opacity: .18; }
+[data-sd-id].sd-related > :is(rect, ellipse, polygon, polyline):not(.sd-hit) { stroke-width: 3; }
+[data-sd-id].sd-primary { filter: drop-shadow(0 0 5px #b9e9c4); }
+[data-sd-id].sd-primary > :is(rect, ellipse, polygon, polyline):not(.sd-hit) { stroke-width: 4; }
+[data-sd-id]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media print {
+    body { padding: 0; }
+    header, #trace-status, noscript { display: none; }
+    main { overflow: visible; border: 0; }
+    svg { max-width: 100%; height: auto; }
+    svg [data-sd-id] { opacity: 1 !important; filter: none !important; outline: none !important; }
+    svg [data-sd-id] > :is(rect, ellipse, polygon):not(.sd-hit) { stroke-width: 1 !important; }
+    svg [data-sd-id] > polyline:not(.sd-hit) { stroke-width: 2 !important; }
+}
+</style></head><body>
+<header><div><span class="brand">Studio Draw</span><h1>ODROID-N2 · Use cases · control a local track</h1>
+<p>Hover or Tab to explore. Click or Enter to pin. Escape to clear.</p></div>
+<button id="clear-focus" type="button" hidden>Clear highlight</button></header>
+<p id="trace-status" role="status" aria-live="polite">Full diagram · connections follow saved attachments.</p>
+<main aria-label="Interactive diagram"><svg xmlns="http://www.w3.org/2000/svg" width="660.0" height="350.0" viewBox="0 0 660.0 350.0" role="group" aria-label="ODROID-N2 · Use cases · control a local track" data-sd-focus-policy="relations"><title>ODROID-N2 · Use cases · control a local track</title>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<g data-sd-id="098D1F1B-D64E-4C2A-A670-B8FCAFB312E4" data-sd-kind="rectangle" data-sd-label="ODROID-N2 · Use cases · control a local track" tabindex="0" role="button" aria-label="Highlight ODROID-N2 · Use cases · control a local track" aria-pressed="false"><title>ODROID-N2 · Use cases · control a local track</title>
+<rect x="0.0" y="0.0" width="660.0" height="34.0" rx="0" fill="#18394A" stroke="#FFFFFF"/>
+<text x="330.0" y="17.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">ODROID-N2 · Use cases · control a local track</text>
+</g>
+<g data-sd-id="BA0ADBFF-DF7E-4B3E-A3FC-B04ECCB68663" data-sd-kind="text" data-sd-label="Android 12 source reference · occupant uses the selected media session" tabindex="0" role="button" aria-label="Highlight Android 12 source reference · occupant uses the selected media session" aria-pressed="false"><title>Android 12 source reference · occupant uses the selected media session</title>
+<text x="330.0" y="49.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Android 12 source reference · occupant uses the selected media session</text>
+</g>
+<g data-sd-id="A0B41FA5-C066-4DBF-8800-B7A5E168DAA6" data-sd-kind="rectangle" data-sd-label="AAOS media playback" tabindex="0" role="button" aria-label="Highlight AAOS media playback" aria-pressed="false"><title>AAOS media playback</title>
+<rect x="195.0" y="85.0" width="450.0" height="265.0" rx="0" fill="#F5F9FA" stroke="#173546"/>
+</g>
+<g data-sd-id="B5177B1C-6B38-437F-AABE-F1A72D3513A5" data-sd-kind="text" data-sd-label="AAOS media playback" tabindex="0" role="button" aria-label="Highlight AAOS media playback" aria-pressed="false"><title>AAOS media playback</title>
+<text x="420.0" y="99.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">AAOS media playback</text>
+</g>
+<g data-sd-id="B844A2B1-D739-448E-907A-EC758F7B6E09" data-sd-kind="actor" data-sd-label="Occupant" tabindex="0" role="button" aria-label="Highlight Occupant" aria-pressed="false"><title>Occupant</title>
+<rect x="4.0" y="145.0" width="110.0" height="112.0" fill="transparent"/>
+<ellipse class="uml-actor-head" cx="59.0" cy="156.71428571428572" rx="11.714285714285712" ry="11.714285714285712" fill="none" stroke="#173546"/>
+<path class="uml-actor-body" d="M 59.0 168.42857142857142 L 59.0 198.3" fill="none" stroke="#173546" stroke-width="2"/>
+<path class="uml-actor-body" d="M 26.0 190.1 L 59.0 177.8" fill="none" stroke="#173546" stroke-width="2"/>
+<path class="uml-actor-body" d="M 59.0 177.8 L 92.0 190.1" fill="none" stroke="#173546" stroke-width="2"/>
+<path class="uml-actor-body" d="M 59.0 198.3 L 31.5 227.0" fill="none" stroke="#173546" stroke-width="2"/>
+<path class="uml-actor-body" d="M 59.0 198.3 L 86.5 227.0" fill="none" stroke="#173546" stroke-width="2"/>
+<text x="59.0" y="242.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Occupant</text>
+</g>
+<g data-sd-id="B9ED4FF3-9469-4CF5-91E7-D063F749E295" data-sd-kind="ellipse" data-sd-label="Play or resume
+a prepared track" tabindex="0" role="button" aria-label="Highlight Play or resume
+a prepared track" aria-pressed="false" data-sd-parent="A0B41FA5-C066-4DBF-8800-B7A5E168DAA6"><title>Play or resume
+a prepared track</title>
+<ellipse cx="410.0" cy="165.0" rx="155.0" ry="35.0" fill="#DEEFE4" stroke="#173546"/>
+<text x="410.0" y="154.075" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Play or resume</text>
+<text x="410.0" y="175.925" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">a prepared track</text>
+</g>
+<g data-sd-id="AC14F83F-2076-4922-8BFA-0054B25CD4A0" data-sd-kind="ellipse" data-sd-label="Pause a playing track
+and retain its position" tabindex="0" role="button" aria-label="Highlight Pause a playing track
+and retain its position" aria-pressed="false" data-sd-parent="A0B41FA5-C066-4DBF-8800-B7A5E168DAA6"><title>Pause a playing track
+and retain its position</title>
+<ellipse cx="410.0" cy="269.0" rx="155.0" ry="35.0" fill="#E6F2F5" stroke="#173546"/>
+<text x="410.0" y="258.075" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Pause a playing track</text>
+<text x="410.0" y="279.925" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">and retain its position</text>
+</g>
+<g data-sd-id="F60031CB-DC02-4B14-9B91-BB4562B32CAC" data-sd-kind="connector" data-sd-label="Occupant action" tabindex="0" role="button" aria-label="Highlight Occupant action" aria-pressed="false" data-sd-from="B844A2B1-D739-448E-907A-EC758F7B6E09" data-sd-to="B9ED4FF3-9469-4CF5-91E7-D063F749E295"><title>Occupant action</title>
+<defs></defs>
+<polyline points="114.0,201.0 255.0,165.0" fill="none" stroke="#286783" stroke-width="2"/>
+<polyline class="sd-hit" points="114.0,201.0 255.0,165.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="D8202674-F897-4EE1-970E-1875E19A29A4" data-sd-kind="connector" data-sd-label="Occupant action" tabindex="0" role="button" aria-label="Highlight Occupant action" aria-pressed="false" data-sd-from="B844A2B1-D739-448E-907A-EC758F7B6E09" data-sd-to="AC14F83F-2076-4922-8BFA-0054B25CD4A0"><title>Occupant action</title>
+<defs></defs>
+<polyline points="114.0,201.0 255.0,269.0" fill="none" stroke="#286783" stroke-width="2"/>
+<polyline class="sd-hit" points="114.0,201.0 255.0,269.0" aria-hidden="true"/>
+</g>
+</svg></main>
+<noscript><p>Interactive highlighting requires JavaScript. The complete diagram is shown above.</p></noscript>
+<script type="text/javascript">/* Studio Draw: independent relationship highlighting over the exported document. */
+(() => {
+    'use strict';
+    const svg = document.querySelector('main svg');
+    if (!svg) return;
+    const focusPolicy = svg.dataset.sdFocusPolicy || 'relations';
+    const items = [...svg.querySelectorAll('[data-sd-id]')];
+    const byID = new Map(items.map(item => [item.dataset.sdId, item]));
+    const edges = items.filter(item => item.dataset.sdKind === 'connector');
+    const children = new Map();
+    for (const item of items) {
+        const parent = item.dataset.sdParent;
+        if (byID.has(parent)) {
+            if (!children.has(parent)) children.set(parent, []);
+            children.get(parent).push(item.dataset.sdId);
+        }
+    }
+    const status = document.getElementById('trace-status');
+    const clear = document.getElementById('clear-focus');
+    let pinned = null;
+    let hovered = null;
+    let focused = null;
+
+    function relationships(id) {
+        const active = new Set([id]);
+        if (focusPolicy === 'self') return active;
+        // Container exploration reveals descendants but does not highlight their connections.
+        const queue = [id];
+        for (let i = 0; i < queue.length; i++) {
+            for (const child of children.get(queue[i]) || []) {
+                if (!active.has(child)) { active.add(child); queue.push(child); }
+            }
+        }
+        for (const edge of edges) {
+            const from = edge.dataset.sdFrom, to = edge.dataset.sdTo;
+            if (!byID.has(from) || !byID.has(to)) continue;
+            if (edge.dataset.sdId === id || from === id || to === id) {
+                active.add(edge.dataset.sdId); active.add(from); active.add(to);
+            }
+        }
+        // Flat SVG groups keep a dim container from reducing an active child's opacity.
+        for (const member of [...active]) {
+            let parent = byID.get(member)?.dataset.sdParent;
+            const seen = new Set();
+            while (byID.has(parent) && !seen.has(parent)) {
+                seen.add(parent); active.add(parent); parent = byID.get(parent).dataset.sdParent;
+            }
+        }
+        return active;
+    }
+
+    function render() {
+        const id = pinned || hovered || focused;
+        const active = id ? relationships(id) : new Set();
+        svg.toggleAttribute('data-tracing', Boolean(id));
+        for (const item of items) {
+            const key = item.dataset.sdId;
+            item.classList.toggle('sd-dim', Boolean(id) && !active.has(key));
+            item.classList.toggle('sd-related', Boolean(id) && active.has(key));
+            item.classList.toggle('sd-primary', key === id);
+            item.setAttribute('aria-pressed', String(key === pinned));
+        }
+        status.textContent = id
+            ? `${pinned ? 'Pinned' : 'Preview'}: ${byID.get(id).dataset.sdLabel} · ${focusPolicy === 'self' ? 'current component' : 'saved connections and hierarchy'}`
+            : focusPolicy === 'self' ? 'Full diagram · hover to focus one component.' : 'Full diagram · connections follow saved attachments.';
+        clear.hidden = !id;
+    }
+
+    function reset() { pinned = hovered = focused = null; render(); }
+    function pin(id) { pinned = pinned === id ? null : id; hovered = focused = null; render(); }
+    for (const item of items) {
+        const id = item.dataset.sdId;
+        item.addEventListener('pointerenter', () => { hovered = id; render(); });
+        item.addEventListener('pointerleave', () => { if (hovered === id) hovered = null; render(); });
+        item.addEventListener('focus', () => { focused = id; render(); });
+        item.addEventListener('blur', () => { if (focused === id) focused = null; render(); });
+        item.addEventListener('click', () => pin(id));
+        item.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); pin(id); }
+        });
+    }
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') reset(); });
+    svg.addEventListener('click', event => { if (!event.target.closest('[data-sd-id]')) reset(); });
+    clear.addEventListener('click', () => {
+        // Move focus off a control that is about to be hidden.
+        const previous = byID.get(pinned || hovered || focused);
+        previous?.focus();
+        reset();
+    });
+    render();
+})();
+</script></body></html>

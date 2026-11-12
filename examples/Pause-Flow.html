@@ -1,0 +1,229 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ODROID-N2 · Pause · state and resume position</title><style>:root { color-scheme: dark; --page: #101419; --ink: #dce5e1; --muted: #9daab0; --accent: #b9e9c4; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 28px; background: var(--page); color: var(--ink); font: 15px system-ui, sans-serif; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.brand { color: var(--accent); font-weight: 650; }
+h1 { margin: 8px 0; font-size: 24px; }
+p { color: var(--muted); line-height: 1.5; }
+button { background: var(--accent); color: #15261c; border: 0; border-radius: 8px; padding: 10px 16px; font: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+#trace-status { min-height: 1.5em; }
+main { max-width: 100%; overflow: auto; border: 1px solid #2b353d; border-radius: 12px; }
+svg { display: block; max-width: none; }
+[data-sd-id] { cursor: pointer; }
+.sd-hit { stroke: transparent; stroke-width: 14; fill: none; pointer-events: stroke; }
+svg[data-tracing] [data-sd-id].sd-dim { opacity: .18; }
+[data-sd-id].sd-related > :is(rect, ellipse, polygon, polyline):not(.sd-hit) { stroke-width: 3; }
+[data-sd-id].sd-primary { filter: drop-shadow(0 0 5px #b9e9c4); }
+[data-sd-id].sd-primary > :is(rect, ellipse, polygon, polyline):not(.sd-hit) { stroke-width: 4; }
+[data-sd-id]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media print {
+    body { padding: 0; }
+    header, #trace-status, noscript { display: none; }
+    main { overflow: visible; border: 0; }
+    svg { max-width: 100%; height: auto; }
+    svg [data-sd-id] { opacity: 1 !important; filter: none !important; outline: none !important; }
+    svg [data-sd-id] > :is(rect, ellipse, polygon):not(.sd-hit) { stroke-width: 1 !important; }
+    svg [data-sd-id] > polyline:not(.sd-hit) { stroke-width: 2 !important; }
+}
+</style></head><body>
+<header><div><span class="brand">Studio Draw</span><h1>ODROID-N2 · Pause · state and resume position</h1>
+<p>Hover or Tab to explore. Click or Enter to pin. Escape to clear.</p></div>
+<button id="clear-focus" type="button" hidden>Clear highlight</button></header>
+<p id="trace-status" role="status" aria-live="polite">Full diagram · connections follow saved attachments.</p>
+<main aria-label="Interactive diagram"><svg xmlns="http://www.w3.org/2000/svg" width="660.0" height="500.0" viewBox="0 0 660.0 500.0" role="group" aria-label="ODROID-N2 · Pause · state and resume position" data-sd-focus-policy="relations"><title>ODROID-N2 · Pause · state and resume position</title>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<g data-sd-id="0864B963-48B5-4B88-B9E8-2C33CECF9369" data-sd-kind="rectangle" data-sd-label="ODROID-N2 · Pause · state and resume position" tabindex="0" role="button" aria-label="Highlight ODROID-N2 · Pause · state and resume position" aria-pressed="false"><title>ODROID-N2 · Pause · state and resume position</title>
+<rect x="0.0" y="0.0" width="660.0" height="34.0" rx="8" fill="#18394A" stroke="#FFFFFF"/>
+<text x="330.0" y="17.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">ODROID-N2 · Pause · state and resume position</text>
+</g>
+<g data-sd-id="9BE1D820-DC41-4662-99F7-6FE7D84307EF" data-sd-kind="text" data-sd-label="Android 12 source reference · local session and queue item" tabindex="0" role="button" aria-label="Highlight Android 12 source reference · local session and queue item" aria-pressed="false"><title>Android 12 source reference · local session and queue item</title>
+<text x="330.0" y="49.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Android 12 source reference · local session and queue item</text>
+</g>
+<g data-sd-id="01C8933C-814A-4AAC-9FB9-A6CC07BACDBA" data-sd-kind="rectangle" data-sd-label="Tap Pause" tabindex="0" role="button" aria-label="Highlight Tap Pause" aria-pressed="false"><title>Tap Pause</title>
+<rect x="8.0" y="72.0" width="260.0" height="57.0" rx="8" fill="#E6F2F5" stroke="#173546"/>
+<text x="138.0" y="100.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Tap Pause</text>
+</g>
+<g data-sd-id="B8105FE3-C4E2-45D6-8D3A-93871A95FA53" data-sd-kind="diamond" data-sd-label="Controller
+available?" tabindex="0" role="button" aria-label="Highlight Controller
+available?" aria-pressed="false"><title>Controller
+available?</title>
+<polygon points="138.0,164.0 268.0,192.5 138.0,221.0 8.0,192.5" fill="#EAE5F4" stroke="#173546"/>
+<text x="138.0" y="181.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Controller</text>
+<text x="138.0" y="203.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">available?</text>
+</g>
+<g data-sd-id="D60C422F-33DF-46A7-8412-81772C20F98F" data-sd-kind="connector" data-sd-label="Continue" tabindex="0" role="button" aria-label="Highlight Continue" aria-pressed="false" data-sd-from="01C8933C-814A-4AAC-9FB9-A6CC07BACDBA" data-sd-to="B8105FE3-C4E2-45D6-8D3A-93871A95FA53"><title>Continue</title>
+<defs><marker id="head-D60C422F-33DF-46A7-8412-81772C20F98F-end" viewBox="0 0 11 10" refX="10" refY="5" markerWidth="11" markerHeight="10" orient="auto-start-reverse"><g fill="none" stroke="#286783" stroke-width="1"><path d="M1 1 L10 5 L1 9 Z" fill="#286783"/></g></marker></defs>
+<polyline points="138.0,129.0 138.0,164.0" fill="none" stroke="#286783" stroke-width="2" marker-end="url(#head-D60C422F-33DF-46A7-8412-81772C20F98F-end)"/>
+<polyline class="sd-hit" points="138.0,129.0 138.0,164.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="D02036BA-5228-4619-B981-CC5A23AD0326" data-sd-kind="rectangle" data-sd-label="Send no command" tabindex="0" role="button" aria-label="Highlight Send no command" aria-pressed="false"><title>Send no command</title>
+<rect x="363.0" y="167.0" width="283.0" height="51.0" rx="8" fill="#FBECCA" stroke="#173546"/>
+<text x="504.5" y="192.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Send no command</text>
+</g>
+<g data-sd-id="209B8A71-7DD9-4223-9D39-3475D050E55F" data-sd-kind="connector" data-sd-label="No" tabindex="0" role="button" aria-label="Highlight No" aria-pressed="false" data-sd-from="B8105FE3-C4E2-45D6-8D3A-93871A95FA53" data-sd-to="D02036BA-5228-4619-B981-CC5A23AD0326"><title>No</title>
+<defs><marker id="head-209B8A71-7DD9-4223-9D39-3475D050E55F-end" viewBox="0 0 11 10" refX="10" refY="5" markerWidth="11" markerHeight="10" orient="auto-start-reverse"><g fill="none" stroke="#286783" stroke-width="1"><path d="M1 1 L10 5 L1 9 Z" fill="#286783"/></g></marker></defs>
+<polyline points="268.0,192.5 363.0,192.5" fill="none" stroke="#286783" stroke-width="2" marker-end="url(#head-209B8A71-7DD9-4223-9D39-3475D050E55F-end)"/>
+<polyline class="sd-hit" points="268.0,192.5 363.0,192.5" aria-hidden="true"/>
+</g>
+<g data-sd-id="9AE35588-0872-4179-B978-54DB0B6E19A6" data-sd-kind="text" data-sd-label="No" tabindex="0" role="button" aria-label="Highlight No" aria-pressed="false"><title>No</title>
+<text x="309.5" y="177.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">No</text>
+</g>
+<g data-sd-id="43A6CBCC-F3CF-456C-93FC-53B833E402AA" data-sd-kind="diamond" data-sd-label="Player currently
+playing?" tabindex="0" role="button" aria-label="Highlight Player currently
+playing?" aria-pressed="false"><title>Player currently
+playing?</title>
+<polygon points="138.0,256.0 268.0,284.5 138.0,313.0 8.0,284.5" fill="#EAE5F4" stroke="#173546"/>
+<text x="138.0" y="273.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Player currently</text>
+<text x="138.0" y="295.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">playing?</text>
+</g>
+<g data-sd-id="3F7919CF-5CAC-433A-999F-6A7563F94BB5" data-sd-kind="connector" data-sd-label="Yes" tabindex="0" role="button" aria-label="Highlight Yes" aria-pressed="false" data-sd-from="B8105FE3-C4E2-45D6-8D3A-93871A95FA53" data-sd-to="43A6CBCC-F3CF-456C-93FC-53B833E402AA"><title>Yes</title>
+<defs><marker id="head-3F7919CF-5CAC-433A-999F-6A7563F94BB5-end" viewBox="0 0 11 10" refX="10" refY="5" markerWidth="11" markerHeight="10" orient="auto-start-reverse"><g fill="none" stroke="#286783" stroke-width="1"><path d="M1 1 L10 5 L1 9 Z" fill="#286783"/></g></marker></defs>
+<polyline points="138.0,220.99999999999997 138.0,256.0" fill="none" stroke="#286783" stroke-width="2" marker-end="url(#head-3F7919CF-5CAC-433A-999F-6A7563F94BB5-end)"/>
+<polyline class="sd-hit" points="138.0,220.99999999999997 138.0,256.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="5147B036-3BE4-4B08-A0AF-9D33DC13C61F" data-sd-kind="text" data-sd-label="Yes" tabindex="0" role="button" aria-label="Highlight Yes" aria-pressed="false"><title>Yes</title>
+<text x="165.5" y="238.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Yes</text>
+</g>
+<g data-sd-id="313AACDA-2D09-4F6F-AFA0-E31951E03887" data-sd-kind="rectangle" data-sd-label="Use position 0
+Skip read and native pause" tabindex="0" role="button" aria-label="Highlight Use position 0
+Skip read and native pause" aria-pressed="false"><title>Use position 0
+Skip read and native pause</title>
+<rect x="363.0" y="259.0" width="283.0" height="51.0" rx="8" fill="#FBECCA" stroke="#173546"/>
+<text x="504.5" y="273.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Use position 0</text>
+<text x="504.5" y="295.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Skip read and native pause</text>
+</g>
+<g data-sd-id="3BF27104-CE51-4E59-85B9-6D94D4E249AB" data-sd-kind="connector" data-sd-label="No" tabindex="0" role="button" aria-label="Highlight No" aria-pressed="false" data-sd-from="43A6CBCC-F3CF-456C-93FC-53B833E402AA" data-sd-to="313AACDA-2D09-4F6F-AFA0-E31951E03887"><title>No</title>
+<defs><marker id="head-3BF27104-CE51-4E59-85B9-6D94D4E249AB-end" viewBox="0 0 11 10" refX="10" refY="5" markerWidth="11" markerHeight="10" orient="auto-start-reverse"><g fill="none" stroke="#286783" stroke-width="1"><path d="M1 1 L10 5 L1 9 Z" fill="#286783"/></g></marker></defs>
+<polyline points="268.0,284.5 363.0,284.5" fill="none" stroke="#286783" stroke-width="2" marker-end="url(#head-3BF27104-CE51-4E59-85B9-6D94D4E249AB-end)"/>
+<polyline class="sd-hit" points="268.0,284.5 363.0,284.5" aria-hidden="true"/>
+</g>
+<g data-sd-id="A870FA5A-7CB8-4C43-8E78-3AF076A588FE" data-sd-kind="text" data-sd-label="No" tabindex="0" role="button" aria-label="Highlight No" aria-pressed="false"><title>No</title>
+<text x="309.5" y="269.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">No</text>
+</g>
+<g data-sd-id="26984E40-8CD4-4E0F-8003-290B63103C11" data-sd-kind="rectangle" data-sd-label="Read position, then pause" tabindex="0" role="button" aria-label="Highlight Read position, then pause" aria-pressed="false"><title>Read position, then pause</title>
+<rect x="8.0" y="348.0" width="260.0" height="57.0" rx="8" fill="#E6F2F5" stroke="#173546"/>
+<text x="138.0" y="376.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Read position, then pause</text>
+</g>
+<g data-sd-id="158DCF74-B7E7-4AD6-9343-509FE91E24F3" data-sd-kind="connector" data-sd-label="Yes" tabindex="0" role="button" aria-label="Highlight Yes" aria-pressed="false" data-sd-from="43A6CBCC-F3CF-456C-93FC-53B833E402AA" data-sd-to="26984E40-8CD4-4E0F-8003-290B63103C11"><title>Yes</title>
+<defs><marker id="head-158DCF74-B7E7-4AD6-9343-509FE91E24F3-end" viewBox="0 0 11 10" refX="10" refY="5" markerWidth="11" markerHeight="10" orient="auto-start-reverse"><g fill="none" stroke="#286783" stroke-width="1"><path d="M1 1 L10 5 L1 9 Z" fill="#286783"/></g></marker></defs>
+<polyline points="138.0,313.0 138.0,348.0" fill="none" stroke="#286783" stroke-width="2" marker-end="url(#head-158DCF74-B7E7-4AD6-9343-509FE91E24F3-end)"/>
+<polyline class="sd-hit" points="138.0,313.0 138.0,348.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="12B2112E-7F3E-4CFB-A6B7-E0E1C124BD00" data-sd-kind="text" data-sd-label="Yes" tabindex="0" role="button" aria-label="Highlight Yes" aria-pressed="false"><title>Yes</title>
+<text x="165.5" y="330.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Yes</text>
+</g>
+<g data-sd-id="6AE6AA68-EEB7-4077-AC00-B5C1D0D7A6B2" data-sd-kind="rectangle" data-sd-label="Publish PAUSED + position
+Then abandon audio focus" tabindex="0" role="button" aria-label="Highlight Publish PAUSED + position
+Then abandon audio focus" aria-pressed="false"><title>Publish PAUSED + position
+Then abandon audio focus</title>
+<rect x="8.0" y="440.0" width="260.0" height="57.0" rx="8" fill="#E6F2F5" stroke="#173546"/>
+<text x="138.0" y="457.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Publish PAUSED + position</text>
+<text x="138.0" y="479.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#173546">Then abandon audio focus</text>
+</g>
+<g data-sd-id="D3C4CBF1-8955-40A5-A8C1-E34580D60D3A" data-sd-kind="connector" data-sd-label="Continue" tabindex="0" role="button" aria-label="Highlight Continue" aria-pressed="false" data-sd-from="26984E40-8CD4-4E0F-8003-290B63103C11" data-sd-to="6AE6AA68-EEB7-4077-AC00-B5C1D0D7A6B2"><title>Continue</title>
+<defs><marker id="head-D3C4CBF1-8955-40A5-A8C1-E34580D60D3A-end" viewBox="0 0 11 10" refX="10" refY="5" markerWidth="11" markerHeight="10" orient="auto-start-reverse"><g fill="none" stroke="#286783" stroke-width="1"><path d="M1 1 L10 5 L1 9 Z" fill="#286783"/></g></marker></defs>
+<polyline points="138.0,405.0 138.0,440.0" fill="none" stroke="#286783" stroke-width="2" marker-end="url(#head-D3C4CBF1-8955-40A5-A8C1-E34580D60D3A-end)"/>
+<polyline class="sd-hit" points="138.0,405.0 138.0,440.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="1ACB334F-6F16-493F-B716-255086FED411" data-sd-kind="connector" data-sd-label="Both branches publish PAUSED" tabindex="0" role="button" aria-label="Highlight Both branches publish PAUSED" aria-pressed="false" data-sd-from="313AACDA-2D09-4F6F-AFA0-E31951E03887" data-sd-to="6AE6AA68-EEB7-4077-AC00-B5C1D0D7A6B2"><title>Both branches publish PAUSED</title>
+<defs><marker id="head-1ACB334F-6F16-493F-B716-255086FED411-end" viewBox="0 0 11 10" refX="10" refY="5" markerWidth="11" markerHeight="10" orient="auto-start-reverse"><g fill="none" stroke="#286783" stroke-width="1"><path d="M1 1 L10 5 L1 9 Z" fill="#286783"/></g></marker></defs>
+<polyline points="504.49999999999994,310.0 504.0,305.0 504.0,468.5 307.0,468.5 268.0,468.5" fill="none" stroke="#286783" stroke-width="2" marker-end="url(#head-1ACB334F-6F16-493F-B716-255086FED411-end)"/>
+<polyline class="sd-hit" points="504.49999999999994,310.0 504.0,305.0 504.0,468.5 307.0,468.5 268.0,468.5" aria-hidden="true"/>
+</g>
+</svg></main>
+<noscript><p>Interactive highlighting requires JavaScript. The complete diagram is shown above.</p></noscript>
+<script type="text/javascript">/* Studio Draw: independent relationship highlighting over the exported document. */
+(() => {
+    'use strict';
+    const svg = document.querySelector('main svg');
+    if (!svg) return;
+    const focusPolicy = svg.dataset.sdFocusPolicy || 'relations';
+    const items = [...svg.querySelectorAll('[data-sd-id]')];
+    const byID = new Map(items.map(item => [item.dataset.sdId, item]));
+    const edges = items.filter(item => item.dataset.sdKind === 'connector');
+    const children = new Map();
+    for (const item of items) {
+        const parent = item.dataset.sdParent;
+        if (byID.has(parent)) {
+            if (!children.has(parent)) children.set(parent, []);
+            children.get(parent).push(item.dataset.sdId);
+        }
+    }
+    const status = document.getElementById('trace-status');
+    const clear = document.getElementById('clear-focus');
+    let pinned = null;
+    let hovered = null;
+    let focused = null;
+
+    function relationships(id) {
+        const active = new Set([id]);
+        if (focusPolicy === 'self') return active;
+        // Container exploration reveals descendants but does not highlight their connections.
+        const queue = [id];
+        for (let i = 0; i < queue.length; i++) {
+            for (const child of children.get(queue[i]) || []) {
+                if (!active.has(child)) { active.add(child); queue.push(child); }
+            }
+        }
+        for (const edge of edges) {
+            const from = edge.dataset.sdFrom, to = edge.dataset.sdTo;
+            if (!byID.has(from) || !byID.has(to)) continue;
+            if (edge.dataset.sdId === id || from === id || to === id) {
+                active.add(edge.dataset.sdId); active.add(from); active.add(to);
+            }
+        }
+        // Flat SVG groups keep a dim container from reducing an active child's opacity.
+        for (const member of [...active]) {
+            let parent = byID.get(member)?.dataset.sdParent;
+            const seen = new Set();
+            while (byID.has(parent) && !seen.has(parent)) {
+                seen.add(parent); active.add(parent); parent = byID.get(parent).dataset.sdParent;
+            }
+        }
+        return active;
+    }
+
+    function render() {
+        const id = pinned || hovered || focused;
+        const active = id ? relationships(id) : new Set();
+        svg.toggleAttribute('data-tracing', Boolean(id));
+        for (const item of items) {
+            const key = item.dataset.sdId;
+            item.classList.toggle('sd-dim', Boolean(id) && !active.has(key));
+            item.classList.toggle('sd-related', Boolean(id) && active.has(key));
+            item.classList.toggle('sd-primary', key === id);
+            item.setAttribute('aria-pressed', String(key === pinned));
+        }
+        status.textContent = id
+            ? `${pinned ? 'Pinned' : 'Preview'}: ${byID.get(id).dataset.sdLabel} · ${focusPolicy === 'self' ? 'current component' : 'saved connections and hierarchy'}`
+            : focusPolicy === 'self' ? 'Full diagram · hover to focus one component.' : 'Full diagram · connections follow saved attachments.';
+        clear.hidden = !id;
+    }
+
+    function reset() { pinned = hovered = focused = null; render(); }
+    function pin(id) { pinned = pinned === id ? null : id; hovered = focused = null; render(); }
+    for (const item of items) {
+        const id = item.dataset.sdId;
+        item.addEventListener('pointerenter', () => { hovered = id; render(); });
+        item.addEventListener('pointerleave', () => { if (hovered === id) hovered = null; render(); });
+        item.addEventListener('focus', () => { focused = id; render(); });
+        item.addEventListener('blur', () => { if (focused === id) focused = null; render(); });
+        item.addEventListener('click', () => pin(id));
+        item.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); pin(id); }
+        });
+    }
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') reset(); });
+    svg.addEventListener('click', event => { if (!event.target.closest('[data-sd-id]')) reset(); });
+    clear.addEventListener('click', () => {
+        // Move focus off a control that is about to be hidden.
+        const previous = byID.get(pinned || hovered || focused);
+        previous?.focus();
+        reset();
+    });
+    render();
+})();
+</script></body></html>

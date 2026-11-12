@@ -1,0 +1,311 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ODROID-N2 · Android platform layers</title><style>:root { color-scheme: dark; --page: #101419; --ink: #dce5e1; --muted: #9daab0; --accent: #b9e9c4; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 28px; background: var(--page); color: var(--ink); font: 15px system-ui, sans-serif; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.brand { color: var(--accent); font-weight: 650; }
+h1 { margin: 8px 0; font-size: 24px; }
+p { color: var(--muted); line-height: 1.5; }
+button { background: var(--accent); color: #15261c; border: 0; border-radius: 8px; padding: 10px 16px; font: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+#trace-status { min-height: 1.5em; }
+main { max-width: 100%; overflow: auto; border: 1px solid #2b353d; border-radius: 12px; }
+svg { display: block; max-width: none; }
+[data-sd-id] { cursor: pointer; }
+.sd-hit { stroke: transparent; stroke-width: 14; fill: none; pointer-events: stroke; }
+svg[data-tracing] [data-sd-id].sd-dim { opacity: .18; }
+[data-sd-id].sd-related > :is(rect, ellipse, polygon, polyline):not(.sd-hit) { stroke-width: 3; }
+[data-sd-id].sd-primary { filter: drop-shadow(0 0 5px #b9e9c4); }
+[data-sd-id].sd-primary > :is(rect, ellipse, polygon, polyline):not(.sd-hit) { stroke-width: 4; }
+[data-sd-id]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media print {
+    body { padding: 0; }
+    header, #trace-status, noscript { display: none; }
+    main { overflow: visible; border: 0; }
+    svg { max-width: 100%; height: auto; }
+    svg [data-sd-id] { opacity: 1 !important; filter: none !important; outline: none !important; }
+    svg [data-sd-id] > :is(rect, ellipse, polygon):not(.sd-hit) { stroke-width: 1 !important; }
+    svg [data-sd-id] > polyline:not(.sd-hit) { stroke-width: 2 !important; }
+}
+</style></head><body>
+<header><div><span class="brand">Studio Draw</span><h1>ODROID-N2 · Android platform layers</h1>
+<p>Hover or Tab to explore. Click or Enter to pin. Escape to clear.</p></div>
+<button id="clear-focus" type="button" hidden>Clear highlight</button></header>
+<p id="trace-status" role="status" aria-live="polite">Full diagram · connections follow saved attachments.</p>
+<main aria-label="Interactive diagram"><svg xmlns="http://www.w3.org/2000/svg" width="840.0" height="610.0" viewBox="0 0 840.0 610.0" role="group" aria-label="ODROID-N2 · Android platform layers" data-sd-focus-policy="self"><title>ODROID-N2 · Android platform layers</title>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<g data-sd-id="44D83126-3227-473D-8DCC-9A638EA4955C" data-sd-kind="rectangle" data-sd-label="ODROID-N2 · Android platform layers" tabindex="0" role="button" aria-label="Highlight ODROID-N2 · Android platform layers" aria-pressed="false"><title>ODROID-N2 · Android platform layers</title>
+<rect x="0.0" y="0.0" width="840.0" height="38.0" rx="0" fill="#182938" stroke="none"/>
+<text x="420.0" y="19.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">ODROID-N2 · Android platform layers</text>
+</g>
+<g data-sd-id="72A14DF0-1B96-4FED-96F2-7A7EEF84A10C" data-sd-kind="rectangle" data-sd-label="Hardkernel Android 9  ·  API 28  ·  arm64  ·  physical board" tabindex="0" role="button" aria-label="Highlight Hardkernel Android 9  ·  API 28  ·  arm64  ·  physical board" aria-pressed="false"><title>Hardkernel Android 9  ·  API 28  ·  arm64  ·  physical board</title>
+<rect x="0.0" y="40.0" width="840.0" height="30.0" rx="0" fill="#FFFFFF" stroke="none"/>
+<text x="420.0" y="55.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#203D4C">Hardkernel Android 9 · API 28 · arm64 · physical board</text>
+</g>
+<g data-sd-id="62FE91C5-7279-4B74-B167-8A82DF761A6B" data-sd-kind="rectangle" data-sd-label="App" tabindex="0" role="button" aria-label="Highlight App" aria-pressed="false"><title>App</title>
+<rect x="0.0" y="80.0" width="54.0" height="59.0" rx="0" fill="#182938" stroke="none"/>
+<g transform="rotate(-90 27.0 109.5)">
+<text x="27.0" y="109.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">App</text>
+</g>
+</g>
+<g data-sd-id="005E5617-F4AE-44AE-BF2B-F638215BACCC" data-sd-kind="rectangle" data-sd-label="Music UI
+MediaPlaybackActivity" tabindex="0" role="button" aria-label="Highlight Music UI
+MediaPlaybackActivity" aria-pressed="false"><title>Music UI
+MediaPlaybackActivity</title>
+<rect x="64.0" y="80.0" width="381.0" height="59.0" rx="0" fill="#007B94" stroke="none"/>
+<text x="254.5" y="98.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Music UI</text>
+<text x="254.5" y="120.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">MediaPlaybackActivity</text>
+</g>
+<g data-sd-id="60FBEA54-E50A-46BF-A8C5-C605E87E4F39" data-sd-kind="rectangle" data-sd-label="Music playback logic
+com.android.music" tabindex="0" role="button" aria-label="Highlight Music playback logic
+com.android.music" aria-pressed="false"><title>Music playback logic
+com.android.music</title>
+<rect x="454.0" y="80.0" width="381.0" height="59.0" rx="0" fill="#007B94" stroke="none"/>
+<text x="644.5" y="98.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Music playback logic</text>
+<text x="644.5" y="120.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">com.android.music</text>
+</g>
+<g data-sd-id="C0106550-9B06-4EAF-941C-FD10CA7161CF" data-sd-kind="connector" data-sd-label="Java API separator" tabindex="0" role="button" aria-label="Highlight Java API separator" aria-pressed="false"><title>Java API separator</title>
+<defs></defs>
+<polyline points="8.0,155.0 668.0,155.0" fill="none" stroke="#637B86" stroke-width="2" stroke-dasharray="50.0 40.0" stroke-dashoffset="0.0"/>
+<polyline class="sd-hit" points="8.0,155.0 668.0,155.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="D14C0B54-A998-4BCD-8EA1-28DC120CA86D" data-sd-kind="text" data-sd-label="Java API" tabindex="0" role="button" aria-label="Highlight Java API" aria-pressed="false"><title>Java API</title>
+<text x="750.0" y="150.75" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="17.826086956521742" fill="#203D4C">Java API</text>
+</g>
+<g data-sd-id="E1735868-560D-4E4E-A267-17690F6FDAC5" data-sd-kind="rectangle" data-sd-label="API" tabindex="0" role="button" aria-label="Highlight API" aria-pressed="false"><title>API</title>
+<rect x="0.0" y="162.0" width="54.0" height="59.0" rx="0" fill="#182938" stroke="none"/>
+<g transform="rotate(-90 27.0 191.5)">
+<text x="27.0" y="191.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">API</text>
+</g>
+</g>
+<g data-sd-id="5EB21977-B736-40A6-B6A5-24290FA1F1D4" data-sd-kind="rectangle" data-sd-label="android.media.MediaPlayer" tabindex="0" role="button" aria-label="Highlight android.media.MediaPlayer" aria-pressed="false"><title>android.media.MediaPlayer</title>
+<rect x="64.0" y="162.0" width="381.0" height="59.0" rx="0" fill="#007B94" stroke="none"/>
+<text x="254.5" y="191.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">android.media.MediaPlayer</text>
+</g>
+<g data-sd-id="113F2CDA-D5C9-4FD9-97FD-5E762C551D33" data-sd-kind="rectangle" data-sd-label="JNI / native media client" tabindex="0" role="button" aria-label="Highlight JNI / native media client" aria-pressed="false"><title>JNI / native media client</title>
+<rect x="454.0" y="162.0" width="381.0" height="59.0" rx="0" fill="#007B94" stroke="none"/>
+<text x="644.5" y="191.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">JNI / native media client</text>
+</g>
+<g data-sd-id="916F275D-7D3A-49D2-85E9-80DE1503007A" data-sd-kind="connector" data-sd-label="Binder IPC separator" tabindex="0" role="button" aria-label="Highlight Binder IPC separator" aria-pressed="false"><title>Binder IPC separator</title>
+<defs></defs>
+<polyline points="8.0,237.0 668.0,237.0" fill="none" stroke="#637B86" stroke-width="2" stroke-dasharray="50.0 40.0" stroke-dashoffset="0.0"/>
+<polyline class="sd-hit" points="8.0,237.0 668.0,237.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="1045EB6A-66E7-400F-A727-20F21B2283AB" data-sd-kind="text" data-sd-label="Binder IPC" tabindex="0" role="button" aria-label="Highlight Binder IPC" aria-pressed="false"><title>Binder IPC</title>
+<text x="750.0" y="232.75" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="17.826086956521742" fill="#203D4C">Binder IPC</text>
+</g>
+<g data-sd-id="04E1554C-E527-4824-85FE-8661544A239D" data-sd-kind="rectangle" data-sd-label="Service" tabindex="0" role="button" aria-label="Highlight Service" aria-pressed="false"><title>Service</title>
+<rect x="0.0" y="244.0" width="54.0" height="59.0" rx="0" fill="#182938" stroke="none"/>
+<g transform="rotate(-90 27.0 273.5)">
+<text x="27.0" y="273.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="17.19343744850673" fill="#FFFFFF">Service</text>
+</g>
+</g>
+<g data-sd-id="CDA0844F-6798-4898-AAE5-2EC5D26965E7" data-sd-kind="rectangle" data-sd-label="media.player
+mediaserver" tabindex="0" role="button" aria-label="Highlight media.player
+mediaserver" aria-pressed="false"><title>media.player
+mediaserver</title>
+<rect x="64.0" y="244.0" width="381.0" height="59.0" rx="0" fill="#007B94" stroke="none"/>
+<text x="254.5" y="262.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">media.player</text>
+<text x="254.5" y="284.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">mediaserver</text>
+</g>
+<g data-sd-id="A92B6133-CFB6-4126-B8FC-2C4C74F74F2D" data-sd-kind="rectangle" data-sd-label="AudioFlinger + audio policy
+audioserver" tabindex="0" role="button" aria-label="Highlight AudioFlinger + audio policy
+audioserver" aria-pressed="false"><title>AudioFlinger + audio policy
+audioserver</title>
+<rect x="454.0" y="244.0" width="381.0" height="59.0" rx="0" fill="#007B94" stroke="none"/>
+<text x="644.5" y="262.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">AudioFlinger + audio policy</text>
+<text x="644.5" y="284.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">audioserver</text>
+</g>
+<g data-sd-id="0B058A9B-5BD0-4F38-9AFA-8665A0A55BF2" data-sd-kind="connector" data-sd-label="HIDL separator" tabindex="0" role="button" aria-label="Highlight HIDL separator" aria-pressed="false"><title>HIDL separator</title>
+<defs></defs>
+<polyline points="8.0,319.0 668.0,319.0" fill="none" stroke="#637B86" stroke-width="2" stroke-dasharray="50.0 40.0" stroke-dashoffset="0.0"/>
+<polyline class="sd-hit" points="8.0,319.0 668.0,319.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="DC392E04-909C-450D-B085-39523D83FD99" data-sd-kind="text" data-sd-label="HIDL" tabindex="0" role="button" aria-label="Highlight HIDL" aria-pressed="false"><title>HIDL</title>
+<text x="750.0" y="314.75" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="17.826086956521742" fill="#203D4C">HIDL</text>
+</g>
+<g data-sd-id="7BA057D1-49F0-45D3-9367-E252DD2DC74C" data-sd-kind="rectangle" data-sd-label="HAL" tabindex="0" role="button" aria-label="Highlight HAL" aria-pressed="false"><title>HAL</title>
+<rect x="0.0" y="325.99999999999994" width="54.0" height="59.0" rx="0" fill="#182938" stroke="none"/>
+<g transform="rotate(-90 27.0 355.49999999999994)">
+<text x="27.0" y="355.49999999999994" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">HAL</text>
+</g>
+</g>
+<g data-sd-id="F0E2F135-4EC2-4D36-A9E4-C3C0C338D91B" data-sd-kind="rectangle" data-sd-label="Audio 4.0
+IDevicesFactory/default" tabindex="0" role="button" aria-label="Highlight Audio 4.0
+IDevicesFactory/default" aria-pressed="false"><title>Audio 4.0
+IDevicesFactory/default</title>
+<rect x="64.0" y="325.99999999999994" width="381.0" height="59.0" rx="0" fill="#173653" stroke="none"/>
+<text x="254.5" y="344.57499999999993" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Audio 4.0</text>
+<text x="254.5" y="366.42499999999995" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">IDevicesFactory/default</text>
+</g>
+<g data-sd-id="6A2A050E-6422-4D00-9BB0-2975A9E9CDD1" data-sd-kind="rectangle" data-sd-label="Audio effects 4.0
+IEffectsFactory/default" tabindex="0" role="button" aria-label="Highlight Audio effects 4.0
+IEffectsFactory/default" aria-pressed="false"><title>Audio effects 4.0
+IEffectsFactory/default</title>
+<rect x="454.0" y="325.99999999999994" width="381.0" height="59.0" rx="0" fill="#173653" stroke="none"/>
+<text x="644.5" y="344.57499999999993" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Audio effects 4.0</text>
+<text x="644.5" y="366.42499999999995" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">IEffectsFactory/default</text>
+</g>
+<g data-sd-id="9AF495EE-6693-4B23-83A1-FBD03BE72520" data-sd-kind="connector" data-sd-label="Driver boundary separator" tabindex="0" role="button" aria-label="Highlight Driver boundary separator" aria-pressed="false"><title>Driver boundary separator</title>
+<defs></defs>
+<polyline points="8.0,400.99999999999994 668.0,400.99999999999994" fill="none" stroke="#637B86" stroke-width="2" stroke-dasharray="50.0 40.0" stroke-dashoffset="0.0"/>
+<polyline class="sd-hit" points="8.0,400.99999999999994 668.0,400.99999999999994" aria-hidden="true"/>
+</g>
+<g data-sd-id="4812C834-EEE0-431D-AB12-EB777C282416" data-sd-kind="text" data-sd-label="Driver boundary" tabindex="0" role="button" aria-label="Highlight Driver boundary" aria-pressed="false"><title>Driver boundary</title>
+<text x="750.0" y="396.7499999999999" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="17.826086956521742" fill="#203D4C">Driver boundary</text>
+</g>
+<g data-sd-id="784897DE-9B1F-4A3A-8CFE-3E74048F166B" data-sd-kind="rectangle" data-sd-label="Kernel" tabindex="0" role="button" aria-label="Highlight Kernel" aria-pressed="false"><title>Kernel</title>
+<rect x="0.0" y="408.0" width="54.0" height="59.0" rx="0" fill="#182938" stroke="none"/>
+<g transform="rotate(-90 27.0 437.5)">
+<text x="27.0" y="437.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Kernel</text>
+</g>
+</g>
+<g data-sd-id="5A53E2D8-FC44-40E8-B6E2-6C972A6DBF63" data-sd-kind="rectangle" data-sd-label="Linux 4.9.337
+aarch64" tabindex="0" role="button" aria-label="Highlight Linux 4.9.337
+aarch64" aria-pressed="false"><title>Linux 4.9.337
+aarch64</title>
+<rect x="64.0" y="408.0" width="381.0" height="59.0" rx="0" fill="#173653" stroke="none"/>
+<text x="254.5" y="426.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Linux 4.9.337</text>
+<text x="254.5" y="448.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">aarch64</text>
+</g>
+<g data-sd-id="01E422EA-F73C-46B5-AEEC-A33BB0300CCA" data-sd-kind="rectangle" data-sd-label="ALSA card 0
+AML-AUGESOUND" tabindex="0" role="button" aria-label="Highlight ALSA card 0
+AML-AUGESOUND" aria-pressed="false"><title>ALSA card 0
+AML-AUGESOUND</title>
+<rect x="454.0" y="408.0" width="381.0" height="59.0" rx="0" fill="#173653" stroke="none"/>
+<text x="644.5" y="426.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">ALSA card 0</text>
+<text x="644.5" y="448.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">AML-AUGESOUND</text>
+</g>
+<g data-sd-id="361B811D-EFBB-4BEA-82EF-927C00D6B87C" data-sd-kind="connector" data-sd-label="Hardware separator" tabindex="0" role="button" aria-label="Highlight Hardware separator" aria-pressed="false"><title>Hardware separator</title>
+<defs></defs>
+<polyline points="8.0,483.0 668.0,483.0" fill="none" stroke="#637B86" stroke-width="2" stroke-dasharray="50.0 40.0" stroke-dashoffset="0.0"/>
+<polyline class="sd-hit" points="8.0,483.0 668.0,483.0" aria-hidden="true"/>
+</g>
+<g data-sd-id="AA4FF568-A4F9-4FB8-B0DA-357CDAB15EED" data-sd-kind="text" data-sd-label="Hardware" tabindex="0" role="button" aria-label="Highlight Hardware" aria-pressed="false"><title>Hardware</title>
+<text x="750.0" y="478.74999999999994" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="17.826086956521742" fill="#203D4C">Hardware</text>
+</g>
+<g data-sd-id="2C8E8839-9227-4983-B746-9F6F23FB2A62" data-sd-kind="rectangle" data-sd-label="Board" tabindex="0" role="button" aria-label="Highlight Board" aria-pressed="false"><title>Board</title>
+<rect x="0.0" y="490.0" width="54.0" height="59.0" rx="0" fill="#182938" stroke="none"/>
+<g transform="rotate(-90 27.0 519.5)">
+<text x="27.0" y="519.5" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Board</text>
+</g>
+</g>
+<g data-sd-id="04CE872C-5523-494F-8D7D-3354AE35CFD5" data-sd-kind="rectangle" data-sd-label="Hardkernel ODROID-N2Plus
+device-tree model" tabindex="0" role="button" aria-label="Highlight Hardkernel ODROID-N2Plus
+device-tree model" aria-pressed="false"><title>Hardkernel ODROID-N2Plus
+device-tree model</title>
+<rect x="64.0" y="490.0" width="381.0" height="59.0" rx="0" fill="#173653" stroke="none"/>
+<text x="254.5" y="508.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Hardkernel ODROID-N2Plus</text>
+<text x="254.5" y="530.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">device-tree model</text>
+</g>
+<g data-sd-id="B83FB54E-0CAF-4805-9944-ABF92E135880" data-sd-kind="rectangle" data-sd-label="ODROID-N2
+Android product model" tabindex="0" role="button" aria-label="Highlight ODROID-N2
+Android product model" aria-pressed="false"><title>ODROID-N2
+Android product model</title>
+<rect x="454.0" y="490.0" width="381.0" height="59.0" rx="0" fill="#173653" stroke="none"/>
+<text x="644.5" y="508.575" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">ODROID-N2</text>
+<text x="644.5" y="530.425" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Android product model</text>
+</g>
+<g data-sd-id="DBB92324-C37B-4A32-922D-308B8DEDF45F" data-sd-kind="rectangle" data-sd-label="Android platform / app" tabindex="0" role="button" aria-label="Highlight Android platform / app" aria-pressed="false"><title>Android platform / app</title>
+<rect x="0.0" y="574.0" width="370.0" height="28.0" rx="0" fill="#007B94" stroke="none"/>
+<text x="185.0" y="588.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Android platform / app</text>
+</g>
+<g data-sd-id="A19D1BAE-90DF-4000-A24E-2E7613E3EFC1" data-sd-kind="rectangle" data-sd-label="Board / vendor implementation" tabindex="0" role="button" aria-label="Highlight Board / vendor implementation" aria-pressed="false"><title>Board / vendor implementation</title>
+<rect x="380.0" y="574.0" width="460.0" height="28.0" rx="0" fill="#173653" stroke="none"/>
+<text x="610.0" y="588.0" text-anchor="middle" dominant-baseline="middle" font-family="system-ui,sans-serif" font-size="19.0" fill="#FFFFFF">Board / vendor implementation</text>
+</g>
+</svg></main>
+<noscript><p>Interactive highlighting requires JavaScript. The complete diagram is shown above.</p></noscript>
+<script type="text/javascript">/* Studio Draw: independent relationship highlighting over the exported document. */
+(() => {
+    'use strict';
+    const svg = document.querySelector('main svg');
+    if (!svg) return;
+    const focusPolicy = svg.dataset.sdFocusPolicy || 'relations';
+    const items = [...svg.querySelectorAll('[data-sd-id]')];
+    const byID = new Map(items.map(item => [item.dataset.sdId, item]));
+    const edges = items.filter(item => item.dataset.sdKind === 'connector');
+    const children = new Map();
+    for (const item of items) {
+        const parent = item.dataset.sdParent;
+        if (byID.has(parent)) {
+            if (!children.has(parent)) children.set(parent, []);
+            children.get(parent).push(item.dataset.sdId);
+        }
+    }
+    const status = document.getElementById('trace-status');
+    const clear = document.getElementById('clear-focus');
+    let pinned = null;
+    let hovered = null;
+    let focused = null;
+
+    function relationships(id) {
+        const active = new Set([id]);
+        if (focusPolicy === 'self') return active;
+        // Container exploration reveals descendants but does not highlight their connections.
+        const queue = [id];
+        for (let i = 0; i < queue.length; i++) {
+            for (const child of children.get(queue[i]) || []) {
+                if (!active.has(child)) { active.add(child); queue.push(child); }
+            }
+        }
+        for (const edge of edges) {
+            const from = edge.dataset.sdFrom, to = edge.dataset.sdTo;
+            if (!byID.has(from) || !byID.has(to)) continue;
+            if (edge.dataset.sdId === id || from === id || to === id) {
+                active.add(edge.dataset.sdId); active.add(from); active.add(to);
+            }
+        }
+        // Flat SVG groups keep a dim container from reducing an active child's opacity.
+        for (const member of [...active]) {
+            let parent = byID.get(member)?.dataset.sdParent;
+            const seen = new Set();
+            while (byID.has(parent) && !seen.has(parent)) {
+                seen.add(parent); active.add(parent); parent = byID.get(parent).dataset.sdParent;
+            }
+        }
+        return active;
+    }
+
+    function render() {
+        const id = pinned || hovered || focused;
+        const active = id ? relationships(id) : new Set();
+        svg.toggleAttribute('data-tracing', Boolean(id));
+        for (const item of items) {
+            const key = item.dataset.sdId;
+            item.classList.toggle('sd-dim', Boolean(id) && !active.has(key));
+            item.classList.toggle('sd-related', Boolean(id) && active.has(key));
+            item.classList.toggle('sd-primary', key === id);
+            item.setAttribute('aria-pressed', String(key === pinned));
+        }
+        status.textContent = id
+            ? `${pinned ? 'Pinned' : 'Preview'}: ${byID.get(id).dataset.sdLabel} · ${focusPolicy === 'self' ? 'current component' : 'saved connections and hierarchy'}`
+            : focusPolicy === 'self' ? 'Full diagram · hover to focus one component.' : 'Full diagram · connections follow saved attachments.';
+        clear.hidden = !id;
+    }
+
+    function reset() { pinned = hovered = focused = null; render(); }
+    function pin(id) { pinned = pinned === id ? null : id; hovered = focused = null; render(); }
+    for (const item of items) {
+        const id = item.dataset.sdId;
+        item.addEventListener('pointerenter', () => { hovered = id; render(); });
+        item.addEventListener('pointerleave', () => { if (hovered === id) hovered = null; render(); });
+        item.addEventListener('focus', () => { focused = id; render(); });
+        item.addEventListener('blur', () => { if (focused === id) focused = null; render(); });
+        item.addEventListener('click', () => pin(id));
+        item.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); pin(id); }
+        });
+    }
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') reset(); });
+    svg.addEventListener('click', event => { if (!event.target.closest('[data-sd-id]')) reset(); });
+    clear.addEventListener('click', () => {
+        // Move focus off a control that is about to be hidden.
+        const previous = byID.get(pinned || hovered || focused);
+        previous?.focus();
+        reset();
+    });
+    render();
+})();
+</script></body></html>
