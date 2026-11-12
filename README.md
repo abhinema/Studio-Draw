@@ -26,6 +26,8 @@ In the assistant, type a prompt or use **Dictate** and review the transcript bef
 
 ## Sample HTML exports
 
+**[ODROID-N2 Media Playback — complete project example](examples/ODROID-N2-Media-Playback.html)** brings together the board hardware, software architecture, playback sequences, and Play/Pause use cases in one offline HTML file. Open any diagram by selecting its title. Android 12 source examples and emulator observations are labeled separately from the Android 9 board.
+
 Download any example using **Download raw file** on its GitHub file page, then open the saved HTML in a browser. Each file contains the diagram and its interactive viewer and works offline.
 
 | Diagram | What it shows | HTML export |
